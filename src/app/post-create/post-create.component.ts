@@ -25,7 +25,7 @@ export class PostCreateComponent implements OnInit {
     };
 
   this.data.emit(emp);
-  console.log('>>>>>', emp);
+ 
   }
 
 ngOnInit() {
