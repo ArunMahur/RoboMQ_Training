@@ -2,15 +2,34 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { EmployeeComponent } from './employee/employee.component';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HeaderComponent } from './header/header.component';
+import { FormsModule } from '@angular/forms';
+import { PostCreateComponent } from './post-create/post-create.component';
+import { PostTableComponent } from './post-table/post-table.component';
+import {
+  MatInputModule,
+  MatCardModule,
+  MatButtonModule,
+  MatToolbarModule,
+  MatExpansionModule
+} from "@angular/material";
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent
+    HeaderComponent,
+    PostCreateComponent,
+    PostTableComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule,
+    FormsModule,
+    MatInputModule,
+    MatCardModule,
+    MatButtonModule,
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

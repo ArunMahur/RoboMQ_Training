@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'First-AngularAssignment'`, () => {
+  it(`should have as title 'AngularForm'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('First-AngularAssignment');
+    expect(app.title).toEqual('AngularForm');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('First-AngularAssignment app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('AngularForm app is running!');
   });
 });

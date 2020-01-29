@@ -1,0 +1,27 @@
+<mat-toolbar>Enter Your Data</mat-toolbar>
+<mat-card >
+  <mat-form-field>
+  <input  matInput type="number" placeholder="ID" [(ngModel)]="id">
+  </mat-form-field>
+  <br>
+
+    <mat-form-field>
+    <input matInput type="text" placeholder="Name" [(ngModel)]="name">
+    </mat-form-field>
+    <br>
+
+      <mat-form-field>
+      <input matInput type="number" placeholder="Salary"[(ngModel)]="salary">
+      </mat-form-field>
+      <br>
+
+        <mat-form-field>
+        <input matInput type="text" placeholder="Department" [(ngModel)]="dept">
+        </mat-form-field>
+        <br>
+        <button
+ mat-raised-button
+ color="accent"
+ (click)="onSave()">Add Employee</button>
+
+</mat-card>

@@ -1,0 +1,17 @@
+<table align="center" border="1px">
+   <tr>
+         <th>EmpId</th>
+         <th>Name</th>
+         <th>Salary</th>
+         <th>Department</th>
+         <th colspan="2">Modify</th>
+  </tr>
+  <tr *ngFor="let d of empDetails">
+         <td>{{ d.id }}</td>
+         <td>{{ d.name }}</td>
+         <td>{{ d.salary }}</td>
+         <td>{{ d.dept }}</td>
+         <td><a ref="">Edit</a></td>
+         <td><a ref="">Delete</a></td>
+  </tr>
+</table>
