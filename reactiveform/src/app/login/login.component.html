@@ -1,0 +1,10 @@
+<br><br><br><br><br><form [formGroup] = "loginForm" (ngsubmit)="onSubmit()">
+Username  <br> <input placeholder="enter username" formControlName="mail" required><br><br><br>
+<div *ngIf="loginForm.controls.email.errors?.required">email is required</div>
+Password <br><input placeholder="enter password" formControlName="password" type="password" required >
+<div *ngIf="loginForm.controls.password.errors?.required">password is requierd</div><br><br><br>
+<button type="submit" (click)="onSubmit()"> login </button>
+<div *ngIf="InvalidLogin">welocome</div>
+<br>
+<!-- <a routerLink='Register'>sign up</a> -->
+</form>

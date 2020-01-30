@@ -1,0 +1,23 @@
+<br> <br>
+<form [formGroup] = "RegisterForm" (ngsubmit)="onSubmit()" >
+  <br>ID <input type="text" placeholder="id" required><br><br>
+
+  <br>NAME <input type="text" placeholder="name"><br><br>
+  <p *ngIf="RegisterForm.controls.name.errors?.required">Name is required</p>
+  <p *ngIf="RegisterForm.controls.name.errors?.pattern">Enter a valid name</p>
+
+  <br> EMAIL<input type="text" placeholder="email"><br><br>
+  <p *ngIf="RegisterForm.controls.email.errors?.required">Email is required</p>
+  <p *ngIf="RegisterForm.controls.email.errors?.pattern">Enter a valid email</p>
+
+  <br>MOBILE <input type="text" placeholder="mobile"><br><br>
+  <p *ngIf="RegisterForm.controls.mobile.errors?.required">Mobile no is required</p>
+  <p *ngIf="Register.controls.mobile.errors?.maxlength">Maximum length should be 10</p>
+
+  <br>PASSWORD <input type="text" placeholder="password" type = 'password'><br><br>
+  <p *ngIf="RegisterForm.controls.password.errors?.required">Password required</p>
+  <p *ngIf="RegisterForm.controls.password.errors?.pattern">Password is weak</p>
+
+  <br>
+  <br><button type="submit"> Register </button>
+</form>
